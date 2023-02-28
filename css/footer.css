@@ -1,0 +1,37 @@
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  background: black;
+}
+.footer h2 {
+  font-family: Fira Sans, roboto;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: #ffa800;
+}
+.footer li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: white;
+}
+.link {
+  margin-top: 20px;
+}
+.port {
+  margin-top: 20px;
+}
+.footer li a {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

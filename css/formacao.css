@@ -1,0 +1,43 @@
+.formacao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+.formacao .subtitulo {
+  color: #e0e0e0;
+}
+.ensino-medio {
+  padding: 10px;
+}
+.graduacao-completa {
+  padding: 10px;
+}
+.graduacao-andamento {
+  padding: 10px;
+}
+p {
+  padding: 0px;
+  font-size: 20px;
+}
+h3 {
+  padding: 0px;
+  font-size: 24px;
+}
+h2 {
+  font-size: 48px;
+}
+@media (max-width: 800px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .curso-list {
+    grid-template-columns: 1fr;
+  }
+}
