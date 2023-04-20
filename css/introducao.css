@@ -1,46 +1,53 @@
-.introducao {
+.introducao
+{
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 4fr 8fr;
+  grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
 }
-.introducao h1 {
+.introducao h1
+{
   font-size: 3rem;
   line-height: 3.75rem;
   margin-bottom: 30px;
-  position: relative;
 }
-.introducao h1::before {
+.introducao h1::before 
+{
   content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
   background: url("../img/detalhe.svg") no-repeat center;
-  position: absolute;
-  top: 0px;
-  left: -80px;
-  top: -10px;
 }
-
-.introducao p {
+.introducao p
+{
   font-size: 1.25rem;
   color: #141414;
 }
 
-@media (max-width: 300px) {
-  .introducao h1 {
+@media (max-width: 800px)
+{
+  .introducao
+  {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao h1
+  {
     font-size: 2rem;
   }
-  @media (max-width: 800px) {
-    .introducao {
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-    .introducao h1 {
-      font-size: 2rem;
+
+  @media (max-width: 600px)
+  {
+    .introducao
+    {
+      grid-template-columns: none;
+      grid-template-rows: auto;
+      justify-items: center;
     }
   }
 }
